@@ -1,5 +1,5 @@
 const isValidName = (name) => {
-	if(typeof name === 'string' && name.trim().length > 3) {
+	if(typeof name == 'string' && name.trim().length > 3) {
 		return true;
 	}
 	return false;
@@ -15,7 +15,7 @@ const hoursAttended = (attended, length) => {
 
 const isWholePositiveNumber = (number) => {
 	const type = typeof number;
-	return (type === 'number' || type === 'string')
+	return (type == 'number' || type == 'string')
 		&& !isNaN(number - parseFloat(number))
 		&& number >= 0
 		&& number % 1 == 0;
